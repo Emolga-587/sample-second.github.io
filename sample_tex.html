@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sample_tex</title>
+    <meta charset="UTF-8">
+    <!-- LaTeXを使用するには以下を挿入 -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <h1>LaTeX使ってみた</h1>
+    <p>インラインモード</p>
+    \(a^2+b^2=c^2\)
+    <p>ブロックモード</p>
+    \[\int_{-\infty}^{\infty}e^{-ax^2}\text{d}x\]
+    $$=\sqrt{\dfrac{\pi}{a}}$$
+
+    \[\mathscr{ABC}\]
+    \[ABC\]
+    <b>\[ABC\]</b>
+
+    \newcommand{\kP}{{\widetilde{\bm{k}}_\parallel}}
+    \newcommand{\KP}{{\widetilde{\bm{K}}_\parallel}}
+    \newcommand{\hO}{{\widetilde{\hbar\Omega}}}
+    \newcommand{\EO}{{\widetilde{E}_0}}
+
+    $$
+    \widetilde{H} = 
+    \left(\begin{array}{cccc}
+    \EO\left[\sqrt{\kP^2+1}+\sqrt{\left(\KP-\kP\right)^2+1}\right]&\hO&\hO&0\\
+    \hO&1+\EO\sqrt{\left(\KP-\kP\right)^2+1}&0&\hO\\
+    \hO&0&1+\EO\sqrt{\kP^2+1}&\hO\\
+    0&\hO&\hO&2
+\end{array}\right)
+$$
+</body>
